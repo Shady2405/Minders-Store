@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Promised Land | Minders</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../Book-Store/images/WhatsApp Image 2024-09-03 at 21.08.18_92f3647a.jpg">
+  <link rel="stylesheet" href="../Book-Store/css/styles.css">
+  <link rel="stylesheet" href="../Book-Store/css/nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <nav>
+    <ul class="navDesk">
+        <li class="logo"><img src="../Book-Store/images/Minders_logo-removebg.png" alt=""> MINDERS</li>
+        <li class="hide"><a href="../index.html">Home</a></li>
+        <li class="hide pro" onclick=drop()><a href="#">Products <i id="DOWN" class="fa-solid fa-caret-down d dd"></i></a>
+        <ul class="dropdown">
+            <li><a href="../products.html">View All</a></li>
+            <li><a href="../products.html#offers">Our Offers</a></li>
+            <li><a href="../products.html#science-fiction">Science-Fiction</a></li>
+            <li><a href="../products.html#romance">Romance</a></li>
+            <li><a href="../products.html#classic">Classic</a></li>
+            <li><a href="../products.html#fantasy">Fantasy</a></li>
+            <li><a href="../products.html#new">New Arrival</a></li>
+        </ul>
+        </li>
+        <li class="hide"><a href="../cart.html">Checkout</a></li>
+        <li class="hide"><a href="../wishlist.html">Wishlist</a></li>
+        <li class="hide"><a href="../about-us.html">About Us</a></li>
+        <li class="hide"><a href="#">Contact Us</a></li>
+        <li class="hide"><a href="../sign.html">Login</a></li>
+        <li class="was" id="input" onclick=search()><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li class="flow"><input class="was" type="text" id="feild" oninput="myFunction()" placeholder="Search.."><i onclick=xmark() class="fa-solid fa-xmark x"></i></li>
+        <li class="menu" onclick=show()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+    </ul>
+    <ul class="navMob">
+        <li onclick= hide()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+        <li><a href="#">Home</a></li>
+        <li class="pro" onclick=dr()><a href="#">Products <i id="M" class="fa-solid fa-caret-down d"></i></a>
+            <ul class="dropdown dropDown">
+                <li><a href="../products.html">View All</a></li>
+                <li><a href="../products.html#offers">Our Offers</a></li>
+                <li><a href="../products.html#science-fiction">Science-Fiction</a></li>
+                <li><a href="../products.html#romance">Romance</a></li>
+                <li><a href="../products.html#classic">Classic</a></li>
+                <li><a href="../products.html#fantasy">Fantasy</a></li>
+                <li><a href="../products.html#new">New Arrival</a></li>
+            </ul>
+        </li>
+        <li><a href="../cart.html">Checkout</a></li>
+        <li><a href="../wishlist.html">Wishlist</a></li>
+        <li><a href="../about-us.html">About Us</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+        <li><a href="../sign.html">Login</a></li>
+        <li class="hideic" onclick=sea() id="icon"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li><input  type="text" id="F"  placeholder="Search.." > <i onclick=xxmark() class="fa-solid fa-xmark xx"></i></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="book_details-section top-section">
+    <div class="product-gallery">
+      <img src="../Book-Store/images/apromised-land.jpg" alt="../Book-Store/images/apromised-land.jpg" class="main-product-image" id="main-image"
+        data-src="../Book-Store/images/apromised-land.jpg" >
+      <div class="thumbnail-gallery">
+        <a href="./wild silence.html"><img src="../Book-Store/images/the-wild-silence.jpg" alt="../Book-Store/images/the-wild-silence.jpg" class="thumbnail"
+          data-src="../Book-Store/images/the-wild-silence.jpg" title="Related Books" title="Related Books"></a>
+        <a href="./olive&mabel.html"><img src="../Book-Store/images/olive.jpg" alt="../Book-Store/images/olive.jpg" class="thumbnail"
+          data-src="../Book-Store/images/olive.jpg" title="Related Books" title="Related Books"></a>
+        <a href="./moth&mountain.html"><img src="../Book-Store/images/themothh.jpg" alt="../Book-Store/images/themothh.jpg" class="thumbnail"
+          data-src="../Book-Store/images/themothh.jpg" title="Related Books" title="Related Books"></a>
+
+      </div>
+    </div>
+
+    <div class="product-details">
+      <h2>A Promised Land</h2>
+      <p>A riveting, deeply personal account of history in the making, from the president who inspired us to believe in
+        the power
+        of democracy.
+
+        In the stirring, highly anticipated first volume of his presidential memoirs, Barack Obama tells the story of
+        his
+        improbable odyssey from young man searching for his identity to leader of the free world, describing in
+        strikingly
+        personal detail both his political education and the landmark moments of the first term of his historic
+        presidency—a
+        time of dramatic transformation and turmoil.
+
+        Obama takes readers on a compelling journey from his earliest political aspirations to the pivotal Iowa caucus
+        victory
+        that demonstrated the power of grassroots activism to the watershed night of November 4, 2008, when he was
+        elected 44th
+        president of the United States, becoming the first African American to hold the nation's highest office.</p>
+      <div class="author">
+        <span>Author: barack obama</span>
+      </div>
+      <div class="price">
+        <span class="current-price">$15.00</span>
+        <span class="original-price">$20.00</span>
+        <span class="discount">25% OFF</span>
+      </div>
+      <div class="quantity-control">
+        <button class="decrease">-</button>
+        <input type="text" value="1" id="quantity">
+        <button class="increase">+</button>
+      </div>
+      <div class="total-price">
+        Total Price: $<span id="total-price">15.00</span>
+      </div>
+      <div class="action-buttons">
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        <button class="add-to-wishlist" onclick="addToWishlist()">Add to Wishlist</button>
+
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about-us.html">About Us</a></li>
+                <li><a href="../contact.html">Contact Us</a></li>
+                <li><a href="">Our Team</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by <span class="designer"><a href="#" target="_blank">Rahma</a></span></p>
+    </div>
+</footer>
+
+  <script src="../Book-Store/js/main.js"></script>
+  <script src="../Book-Store/js/nav.js"></script>
+</body>
+
+</html>
