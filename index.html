@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="Book-Store/images/WhatsApp Image 2024-09-03 at 21.08.18_92f3647a.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="Book-Store/css/style.css">
+    <title>Minders | Book Store</title>
+</head>
+<body>
+    <nav>
+        <ul class="navDesk">
+            <li class="logo"><img src="Book-Store/images/Minders_logo-removebg.png" alt=""> MINDERS</li>
+            <li class="hide"><a href="#">Home</a></li>
+            <li class="hide pro" onclick=drop()><a href="#">Products <i id="DOWN" class="fa-solid fa-caret-down d dd"></i></a>
+            <ul class="dropdown">
+                <li><a href="products.html">View All</a></li>
+                <li><a href="products.html#offers">Our Offers</a></li>
+                <li><a href="products.html#science-fiction">Science-Fiction</a></li>
+                <li><a href="products.html#romance">Romance</a></li>
+                <li><a href="products.html#classic">Classic</a></li>
+                <li><a href="products.html#fantasy">Fantasy</a></li>
+                <li><a href="products.html#new">New Arrival</a></li>
+            </ul>
+            </li>
+            <li class="hide"><a href="cart.html">Checkout</a></li>
+            <li class="hide"><a href="wishlist.html">Wishlist</a></li>
+            <li class="hide"><a href="about-us.html">About Us</a></li>
+            <li class="hide"><a href="contact.html">Contact Us</a></li>
+            <li id="login-link" class="hide"><a href="sign.html">Login</a></li>
+            <li id="p-icon" class="hide" style="display: none;"><a href="#"><i class="fa-regular fa-user user"></i> <span id="username-display"></span></a></li>
+            <li class="was" id="input" onclick=search()><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li class="flow"><input class="was" type="text" id="feild" oninput="myFunction()" placeholder="Search.."><i onclick=xmark() class="fa-solid fa-xmark x"></i></li>
+            <li class="menu" onclick=show()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+        <ul class="navMob">
+            <li onclick= hide()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <li id="pp-icon" style="display: none;"><a href="#"><i class="fa-regular fa-user user"></i> <span id="uusername-display"></span></a></li>
+            <li><a href="#">Home</a></li>
+            <li class="pro" onclick=dr()><a href="#">Products <i id="M" class="fa-solid fa-caret-down d"></i></a>
+                <ul class="dropdown dropDown">
+                    <li><a href="products.html">View All</a></li>
+                    <li><a href="products.html#offers">Our Offers</a></li>
+                    <li><a href="products.html#science-fiction">Science-Fiction</a></li>
+                    <li><a href="products.html#romance">Romance</a></li>
+                    <li><a href="products.html#classic">Classic</a></li>
+                    <li><a href="products.html#fantasy">Fantasy</a></li>
+                    <li><a href="products.html#new">New Arrival</a></li>
+                </ul>
+            </li>
+            <li><a href="cart.html">Checkout</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li id="logmob"><a href="sign.html">Login</a></li>
+            <li class="hideic" onclick=sea() id="icon"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><input  type="text" id="F"  placeholder="Search.." > <i onclick=xxmark() class="fa-solid fa-xmark xx"></i></li>
+        </ul>
+    </nav>
+    <header>
+        <section id="welcome">
+            <div class="welcome-img">
+                <img src="Book-Store/images/Bundle of Deep Purple, Bright Purple, Lavender Book Decor Stack Decorative Stack of Books.jpeg" alt="">
+            </div>
+            <div class="welcome-message">
+                <h1>welcome to Minders</h1>
+            <p> We're thrilled to have you here. Whether you're a passionate reader or just starting your literary journey, our curated selection of books, from timeless classics to the latest bestsellers, is sure to inspire and delight you. Dive into our collection, explore new genres, and discover your next great read.</p>
+            <p class="special-p">Happy reading!<br><span>If You Want To Know More About Us</span></p>
+                <div class="welc-btn">
+                    <a href="about-us.html"><button>About Us</button></a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="fcont">
+            <div class="container">
+                <div class="head">
+                    <h1>expand your mind,</h1>
+                    <h1>reading a book with minders</h1>
+                </div><br>
+                <div class="p">
+                    <p>Reading books is a wonderful way to spend your time. Here at we believe reading will help you make connections with others.</p>
+                </div>
+                
+                <br><br>
+                <a href="products.html"><button class="shop">Shop Now</button></a><br>
+                <div class="image1">
+                    <img src="Book-Store/images/download1.png" alt="">
+                </div>
+            </div>
+        </div>
+    
+        <div class="continer2">
+            <h1 class="new">new book in our store!</h1><br><br>
+            <div class="newBook">
+                <img src="Book-Store/images/the-cruel.jpg" alt="The Cruel Prince Book">
+                <div class="cruel">
+                    <h2>“The Cruel Prince”</h2><br><br>
+                    <p>a fantasy novel written by Holly Black, follows Jude Duarte, a human living in Elfhame, a world with faerie's. Jude longs to be a knight, but her father forbids her. It is a story about overcoming discrimination, as Jude is often bullied by the King's children, and especially Prince Cardan.</p>
+                    <br>
+                    <h1>It is avilable now</h1><br>
+                    <a href="Books/cruel prince.html"><button>Order It</button></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container4">
+            <div class="left">
+                <h1> <i class="fa-regular fa-bookmark b"></i> find your <br> next Book</h1>
+                <p>Our most popular and trending <span>Minders</span> perfect <br> Not sure what to read now next reading mood perfectly.</p><br>
+                <a href="products.html"><button>Explore Now</button></a>
+            </div>
+            <div class="bigright">
+                <div class="caption">
+                    <h1>Some Of The Available Books In Our Store</h1>
+                </div><br><br>
+                <div class="right">
+                    <a href="Books/the martian.html" target="_blank"> <div class="img1">
+                        <img src="Book-Store/images/the-martian.jpg" alt="The martin book">
+                        <p class="bold">The Martin</p>
+                        <p>ANDY WEIR</p>
+                    </div></a>
+                    <a href="Books/hera.html" target="_blank">
+                    <div class="img2">
+                        <P class="bold">Hera</P>
+                        <P>JENNIFER SAINT</P>
+                        <img src="Book-Store/images/hera.jpg" alt="Hera book">
+        
+                    </div>
+                    </a>
+                    <a href="Books/love story.html" target="_blank">
+                        <div class="img3">
+                            <img src="Book-Store/images/novel-love.jpg" alt="A novel love story book">
+                            <p class="bold">A Novel Love Story</p>
+                            <p>ASHLEY POSTON</p>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="container3">
+            
+            <h1><span>20%</span> offers on these books</h1>
+            <div class="books">
+                <a href="Books/wild silence.html"><img src="Book-Store/images/the-wild-silence.jpg" alt=""></a>
+                <a href="Books/moth&mountain.html"><img src="Book-Store/images/themothh.jpg" alt=""></a>
+                <a href="Books/obama.html"><img src="Book-Store/images/apromised-land.jpg" alt=""></a>
+                <a href="Books/oak papers.html"><img src="Book-Store/images/oak.jpg" alt=""></a>
+                <a href="Books/olive&mabel.html"><img class="last" src="Book-Store/images/olive.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="container5">
+            <div class="img5">
+                <img src="Book-Store/images/—Pngtree—realistic magic light effect magic_5854041.png" alt="">
+            </div>
+            <div class="column">
+                <div class="online">
+                    <h1>Online Book <br> Fairs <span>2024</span></h1>
+                    <p>Ready to dive into captivating stories? <br> Join us online for the <span class="minders">"Minders"</span> book fair <br> an adventure through imagination’s pages.</p>
+                </div>
+                <a href="sign.html"><button>Sign in ></button></a>
+            </div>
+            
+        </div>
+        <div class="columm">
+            <br><br><br>
+            <div class="feel"><h2>Feel free to tweak, expand, or personalize this blurb to fit your vision for the <span class="bolder">"Minders"</span> book store. And if you need more assistance or have any other requests, just give us a shout</h2></div>
+            <div class="container6">
+                <div class="img6">
+                    <img src="Book-Store/images/contact us.jpeg" alt="">
+                </div>
+                
+                <div class="contact">
+                    <br>
+                    <h1>Just remember <br>We are here to help!</h1>
+                    <br>
+                    <a href="contact.html"><button>Contact Us ></button></a>
+                </div>
+                    
+                
+            </div>
+        </div>
+    </main>
+    <div class="bigcont">
+        <h1>What our clients say about us</h1>
+    <div class="container7">
+        <section id="one">
+        <div class="img-title">
+            <img src="Book-Store/images/photo_1_2024-09-07_23-31-29.jpg" alt="Daniel" class="daniel-img">
+            <div class="title">
+            <p class="name white">Daniel Clifford</p>
+            <p class="title pale stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></p>
+            </div>
+        </div>
+        <p class="white pp">I recently made a purchase from Minders Online Store, and I’m pleased to share my experience. The website is incredibly user-friendly with a clean, intuitive design that made it easy to find and purchase books. The search functionality was efficient, and I appreciated the detailed book descriptions and high-quality cover images.</p>
+            <p class="pale p-2">  The selection of books was impressive, covering a wide range of genres and authors. I was particularly pleased to find some rare titles that I had been searching for. The prices were competitive, and I took advantage of a discount promotion that was easy to apply during checkout.</p>
+        </section>
+        <section id="two">
+        <div class="img-title">
+            <img src="Book-Store/images/photo_2_2024-09-07_23-31-29.jpg" alt="Daniel">
+            <div class="title">
+            <p class="name white">Jonathan Walters</p>
+            <p class="title pale stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></p>
+            </div>
+        </div>
+        <p class="white pp">The ordering process was straightforward and secure, and my books arrived within the expected timeframe. The packaging was excellent, ensuring that the books arrived in pristine condition. I didn’t need to interact with customer service for this order, but I did notice their responsive support options listed on the site.</p>
+            <p class="pale p-2">Overall, my experience with Minders was very positive. The combination of a well-organized website, a broad book selection, and reliable shipping makes it a great choice for book lovers. I would definitely recommend this online store to others and will be shopping here again in the future.</p>
+        </section>
+        <section id="three">
+        <div class="img-title">
+            <img src="Book-Store/images/photo_4_2024-09-07_23-31-29.jpg" alt="Daniel">
+            <div class="title">
+            <p class="name grey">Jeanette Harmon</p>
+            <p class="title dark stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></p>
+            </div>
+        </div>
+        <p class="grey pp">If you’re in search of a new book or just browsing, Minders Online Store is worth a visit!</p>
+            <p class="dark p-2">I had a fantastic experience shopping at Minders Online Store. The website is beautifully designed and easy to navigate, with clear categories and a powerful search function. Finding my favorite genres was a breeze, and the book descriptions were thorough and accurate.</p>
+        </section>
+        <section id="four">
+        <div class="img-title">
+            <img src="Book-Store/images/photo_3_2024-09-07_23-31-29.jpg" alt="Daniel" class="daniel-img">
+            <div class="title">
+            <p class="white name">Patrick Abrams</p>
+            <p class="title pale stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i></p>
+            </div>
+        </div>
+        <p class="white pp">The selection was outstanding, with a vast array of both popular and niche titles. I was thrilled to find several hard-to-find books and rare editions. Prices were very competitive, and I enjoyed taking advantage of their buy-one-get-one-half-off promotion.</p>
+            <p class="pale p-2">Checkout was quick and secure, and my order arrived within three days. The books were carefully packaged, ensuring they were in perfect condition. Although I didn’t need to contact customer service, the site offers a helpful live chat feature that I’m sure would be useful if needed.
+                Overall, Minders exceeded my expectations. I highly recommend this store for anyone looking for a seamless and enjoyable online book shopping experience. I’ll definitely be back!
+            </p>
+        </section>
+        <section id="five">
+        <div class="img-title">
+            <img src="Book-Store/images/photo_5_2024-09-07_23-31-29.jpg" alt="Daniel">
+            <div class="title">
+            <p class="name grey">Kira Whittle</p>
+            <p class="title dark stars"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></p>
+            </div>
+        </div>
+        <p class="grey pp">Minders impressed me with its exceptional features. The website is well-organized and visually appealing, making browsing and searching a pleasure. I particularly enjoyed their curated book lists and personalized recommendations, which helped me discover some new favorites.</p>
+            <p class="dark p-2">The store offers a wide range of books, from bestsellers to indie titles, and their prices are quite competitive. I was pleased to find that they offer a subscription service for book deliveries, which seems like a great option for avid readers.
+    
+                Shipping was prompt, and my order arrived quickly and in excellent condition, thanks to their meticulous packaging. I also appreciated their easy return policy, which was a nice reassurance.
+                
+                Overall, BookWorm Haven offers a top-notch online shopping experience with its thoughtful features and excellent service. I highly recommend them to anyone looking for a great selection of books and a smooth shopping experience.</p>
+        </section>
+    </div>
+    </div>
+    
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="">Our Team</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer"><a href="https://shady2405.github.io/Shady-Osama/" target="_blank">Shady</a></span></p>
+        </div>
+    </footer>
+    <script src="Book-Store/js/script.js"></script>
+</body>
+</html>

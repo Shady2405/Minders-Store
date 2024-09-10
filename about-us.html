@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Book-Store/css/about-us.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Minders Store</title>
+    <link rel="icon" href="Book-Store/images/WhatsApp Image 2024-09-03 at 21.08.18_92f3647a.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Oswald:wght@200..700&family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <ul class="navDesk">
+            <li class="logo"><img src="Book-Store/images/Minders_logo-removebg.png" alt=""> MINDERS</li>
+            <li class="hide"><a href="index.html">Home</a></li>
+            <li class="hide pro" onclick=drop()><a href="#">Products <i id="DOWN" class="fa-solid fa-caret-down d dd"></i></a>
+            <ul class="dropdown">
+                <li><a href="products.html">View All</a></li>
+                <li><a href="products.html#offers">Our Offers</a></li>
+                <li><a href="products.html#science-fiction">Science-Fiction</a></li>
+                <li><a href="products.html#romance">Romance</a></li>
+                <li><a href="products.html#classic">Classic</a></li>
+                <li><a href="products.html#fantasy">Fantasy</a></li>
+                <li><a href="products.html#new">New Arrival</a></li>
+            </ul>
+            </li>
+            <li class="hide"><a href="cart.html">Checkout</a></li>
+            <li class="hide"><a href="wishlist.html">Wishlist</a></li>
+            <li class="hide"><a href="#">About Us</a></li>
+            <li class="hide"><a href="contact.html">Contact Us</a></li>
+            <li id="login-link" class="hide"><a href="sign.html">Login</a></li>
+            <li id="p-icon" class="hide" style="display: none;"><a href="#"><i class="fa-regular fa-user user"></i> <span id="username-display"></span></a></li>
+            <li class="was" id="input" onclick=search()><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li class="flow"><input class="was" type="text" id="feild" oninput="myFunction()" placeholder="Search.."><i onclick=xmark() class="fa-solid fa-xmark x"></i></li>
+            <li class="menu" onclick=show()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+        <ul class="navMob">
+            <li onclick= hide()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <li id="pp-icon" style="display: none;"><a href="#"><i class="fa-regular fa-user user"></i> <span id="uusername-display"></span></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="pro" onclick=dr()><a href="#">Products <i id="M" class="fa-solid fa-caret-down d"></i></a>
+                <ul class="dropdown dropDown">
+                    <li><a href="products.html">View All</a></li>
+                    <li><a href="products.html#offers">Our Offers</a></li>
+                    <li><a href="products.html#science-fiction">Science-Fiction</a></li>
+                    <li><a href="products.html#romance">Romance</a></li>
+                    <li><a href="products.html#classic">Classic</a></li>
+                    <li><a href="products.html#fantasy">Fantasy</a></li>
+                    <li><a href="products.html#new">New Arrival</a></li>
+                </ul>
+            </li>
+            <li><a href="cart.html">Checkout</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li id="logmob"><a href="sign.html">Login</a></li>
+            <li class="hideic" onclick=sea() id="icon"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><input  type="text" id="F"  placeholder="Search.." > <i onclick=xxmark() class="fa-solid fa-xmark xx"></i></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="minders">
+            <img src="Book-Store/images/minders-icon.png" alt="minders icon" class="minders-icon">
+            <h1 class="title">Minders</h1>
+        </div>
+        <div class="p">
+            <p>don't <span>let</span> your dreams be <span>dreams</span></p>
+        </div>
+
+        <div class="about-us">
+            <section class="left">
+                <div class="about-p left">
+                    <h2>Welcome to Minders,</h2>
+                    <br>
+                    <p>Your one-stop online bookstore for discovering your next great read! We're passionate about connecting readers with books that inspire, entertain, and expand horizons.
+                    </p>
+            </div>
+            <div class="img">
+                <img src="Book-Store/images/Education_3D_Illustration_Pack_-_30_Free_Download_School___Education_3D_Illustrations___IconScout-removebg-preview.png" alt="">
+            </div>
+            </section>
+
+        <br>
+
+        <section class="right">
+            <div class="img">
+                <img src="Book-Store/images/Coder_Dojo-removebg-preview.png" alt="">
+            </div>
+            
+                <div class="about-p">
+                    <h2>Founded in 2024,</h2>
+                <br>
+                    <p> Minders started as a small idea between avid readers. We wanted to create a space where people could not only find books they love but also discover hidden gems and support independent authors. What began as a shared love for reading has now become a thriving online community where readers from all walks of life can come together.
+                    </p>
+                </div>
+        </section>
+            <br>
+
+            
+            <section class="left">
+                <div class="about-p">
+                    <h2>What We Offer</h2>
+                <br>
+                    <p>Our collection spans everything from timeless classics to the latest bestsellers, covering fiction, non-fiction, fantasy books, and more. Whether you're searching for an engaging novel, we've got something for every type of reader. Plus, we offer a range of formats, so you can enjoy your favorite stories in the way that suits you best.
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="Book-Store/images/Free_PSD___3d_female_character_reading_a_book-removebg-preview.png" alt="">
+                </div>
+    
+            </section>
+            <br>
+            <section class="right">
+                <div class="img">
+                    <img src="Book-Store/images/3D_searching_idea_illustration-removebg-preview.png" alt="">
+                </div>
+                <div class="about-p">
+                    <h2>Why choose us</h2>
+                <br>
+                    <p>
+                        What sets us apart is our dedication to curating personalized reading experiences. Our expert team constantly updates the site with fresh recommendations and exclusive deals, ensuring you always find the perfect book. We also pride ourselves on offering excellent customer service and fast, reliable shipping, so you can spend less time waiting and more time reading!
+                    </p>
+                </div>
+                
+    
+            </section>
+            <br>
+
+            <section class="left">
+                <div class="about-p">
+                    <h2>Our Commitment</h2>
+                <br>
+                    <p>
+                        At Minders, we believe in the power of books to change the world. That’s why we’re committed to eco-friendly packaging and supporting literacy programs globally. A portion of every purchase goes toward improving access to education and books in underserved communities.
+                        </p>
+                </div>
+                <div class="img">
+                    <img src="Book-Store/images/Subscription_form___Read___Co__Books-removebg-preview.png" alt="">
+                </div>
+    
+            </section>
+            <br>
+            <section class="right">
+                <div class="img">
+                    <img src="Book-Store/images/Reading_Books_Clipart_Transparent_Background__World_Book_Day_Read_Reading_Book__Book_Clipart__Textbook__Know_How_PNG_Image_For_Free_Download-removebg-preview.png" alt="">
+                </div>
+                <div class="about-p">
+                    <h2>Join Our Community</h2>
+                <br>
+                    <p>
+                        Join our community of book lovers! <a href="#" class="link">Sign In</a> for our newsletter to stay updated on the latest releases, author interviews, and exclusive offers.
+                    </p>
+                    <button><a href="sign.html" class="button">Sign In</a></button>
+                </div>
+                
+    
+            </section>
+            <br>
+            <section class="left">
+                <div class="about-p">
+                    <h2>Start Exploring</h2>
+                <br>
+                    <p>
+                        Whether you’re a lifelong reader or just beginning your literary journey, we have something for you. Explore our bookstore today and find your next great read!
+                        </p>
+                        <button><a href="products.html" class="button">Explore Now</a></button>
+                </div>
+                <div class="img">
+                    <img src="Book-Store/images/Around_the_world_Customizable_Isometric_Illustrations___Amico_Style-removebg-preview.png" alt="">
+                </div>
+                
+    
+            </section>
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="">Our Team</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer"><a href="#" target="_blank">Rawan</a></span></p>
+        </div>
+    </footer>
+    <script src="Book-Store/js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="Book-Store/images/WhatsApp Image 2024-09-03 at 21.08.18_92f3647a.jpg">
+    <title>Sign | Minders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Book-Store/css/sign.css" />
+    <link rel="stylesheet" href="Book-Store/css/nav.css" />
+    
+</head>
+<body>
+  <nav>
+    <ul class="navDesk">
+        <li class="logo"><img src="Book-Store/images/Minders_logo-removebg.png" alt=""> MINDERS</li>
+        <li class="hide"><a href="index.html">Home</a></li>
+        <li class="hide pro" onclick=drop()><a href="#">Products <i id="DOWN" class="fa-solid fa-caret-down d dd"></i></a>
+        <ul class="dropdown">
+            <li><a href="products.html">View All</a></li>
+            <li><a href="products.html#offers">Our Offers</a></li>
+            <li><a href="products.html#science-fiction">Science-Fiction</a></li>
+            <li><a href="products.html#romance">Romance</a></li>
+            <li><a href="products.html#classic">Classic</a></li>
+            <li><a href="products.html#fantasy">Fantasy</a></li>
+            <li><a href="products.html#new">New Arrival</a></li>
+        </ul>
+        </li>
+        <li class="hide"><a href="cart.html">Checkout</a></li>
+        <li class="hide"><a href="wishlist.html">Wishlist</a></li>
+        <li class="hide"><a href="about-us.html">About Us</a></li>
+        <li class="hide"><a href="contact.html">Contact Us</a></li>
+        <li class="hide"><a href="sign.html">Login</a></li>
+        <li class="was" id="input" onclick=search()><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li class="flow"><input class="was" type="text" id="feild"  placeholder="Search.."><i onclick=xmark() class="fa-solid fa-xmark x"></i></li>
+        <li class="menu" onclick=show()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        
+    </ul>
+    <ul class="navMob">
+        <li onclick= hide()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="pro" onclick=dr()><a href="#">Products <i id="M" class="fa-solid fa-caret-down d"></i></a>
+            <ul class="dropdown dropDown">
+                <li><a href="products.html">View All</a></li>
+                <li><a href="products.html#offers">Our Offers</a></li>
+                <li><a href="products.html#science-fiction">Science-Fiction</a></li>
+                <li><a href="products.html#romance">Romance</a></li>
+                <li><a href="products.html#classic">Classic</a></li>
+                <li><a href="products.html#fantasy">Fantasy</a></li>
+                <li><a href="products.html#new">New Arrival</a></li>
+            </ul>
+        </li>
+        <li><a href="cart.html">Checkout</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="sign.html">Login</a></li>
+        <li class="hideic" onclick=sea() id="icon"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li><input  type="text" id="F"  placeholder="Search.." > <i onclick=xxmark() class="fa-solid fa-xmark xx"></i></li>
+    </ul>
+</nav>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="#" class="sign-in-form" id="my-form" onsubmit="login(event)">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" required class="username" placeholder="Username" id="enteredname" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" class="pass" required placeholder="Password" id="enteredpass" />
+                    </div>
+                    <input type="submit" value="Login" class="btn solid" />
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="#" class="sign-up-form" , id="myform">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" required  class="username" placeholder="Username"  id="entered-name" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text"  required placeholder="Email" id="entered-email" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password"  class="pass"  required placeholder="Password"  id="entered-pass" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirm Password" id="confirm-pass" />
+                    </div>
+                    <input type="submit" value="sign up" class="btn solid"  onclick="CheckPassLengthValid()" />
+                    <p class="social-text">Or Sign up with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Join the World of Words!</h3>
+                    <p>
+                        "sign up to start your literary journey. Your perfect read is just a click away."
+                    </p>
+                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="Book-Store/images/image3.svg" class="image  image1" alt="" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Welcome Back</h3>
+                    <p>
+                        "Sign in or join us to dive into endless pages of wonder. 
+                        Your bookshelf awaits."
+                    </p>
+                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="Book-Store/images/image2.svg" class="image  image2" alt="" />
+            </div>
+        </div>
+
+
+    </div>
+    <footer>
+      <div class="footerContainer">
+          <div class="socialIcons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-google-plus"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="footerNav">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="">Our Team</a></li>
+              </ul>
+          </div>
+          
+      </div>
+      <div class="footerBottom">
+          <p>Copyright &copy;2024; Designed by <span class="designer"><a href="#" target="_blank">Toka</a></span></p>
+      </div>
+  </footer>          
+    
+    <script src="Book-Store/js/sign.js"></script>
+    <script src="Book-Store/js/sign2.js"></script>
+    <script src="Book-Store/js/nav.js"></script>
+    
+</body>
+</html>
