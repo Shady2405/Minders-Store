@@ -1,0 +1,851 @@
+body{
+    /* background-color: blueviolet; */
+    background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+/* hsla(256, 72%, 46%, 1) */
+    height: 900px;
+    max-height: 1000px;
+    background-attachment: fixed;
+}
+
+.container{
+    display: flex;
+    border: black;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+sup{
+    color: red;
+}
+
+textarea{
+    width: 200px;
+    height: 50px;
+}
+
+.FormC{
+    border-radius: 10px;
+    width: 35% ;
+    /* height: 100%; */
+    background-color: whitesmoke;
+    /* margin: left 25px; */
+    padding: 10px;
+    position: relative;
+    top: 80px;
+    left: 150px;
+    box-shadow: 10px 10px 10px;
+    /* justify-content: center; */
+    /* box-shadow: 20px color( rgb(5, 5, 5) rgb(7, 7, 7) rgb(5, 5, 5)); */
+}
+
+form{
+    /* position: absolute; */
+    /* top: 100px; */
+    /* margin-top: 100px; */
+    width: 100%;
+    height: 700px;
+    text-align: center;
+}
+.label1{
+    position: absolute;
+    top: 25px ;
+    left: 35px;
+
+}
+.label2{
+    position: absolute;
+    top: 25px ;
+    right: 210px;
+}
+.Name{
+    /* display: flex; */
+    width: 42%;
+    height: 50px;
+    /* justify-content: flex-start; */
+    position: absolute;
+    left: 35px;
+    top: 50px;
+    border-radius: 50px;
+}
+
+#name-error{
+    position: absolute;
+    left: 45px;
+    top: 106px;
+}
+
+.Name1{
+    /* display: flex; */
+    width: 42%;
+    height: 50px;
+    /* justify-content: flex-end; */
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    border-radius: 50px;
+}
+
+#lastname-error{
+    position: absolute;
+    right: 50px;
+    top: 106px;
+}
+
+.Email{
+    position: absolute;
+    top: 125px ;
+    left: 35px;
+}
+#email-error{
+    position: absolute;
+    top: 210px ;
+    left: 40px;
+}
+
+.Message{
+    position: absolute;
+    top: 230px ;
+    left: 35px;
+}
+#subject-error{
+    position: absolute;
+    top: 350px ;
+    left: 35px;
+}
+
+.Add{
+    position: absolute;
+    top: 375px ;
+    left: 35px;
+}
+
+#message-error{
+    position: absolute;
+    top: 610px ;
+    left: 35px;
+}
+
+#Email{
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    width: 90%;
+    height: 50px;
+    border-radius: 50px;
+
+
+}
+
+#Message{
+    position: absolute;
+    top: 260px;
+    right: 20px;
+    width: 90%;
+    height: 80px;
+    max-width: 90%;
+    max-height: 80px;
+    overflow: auto;
+    /* border-radius: 50px; */
+
+}
+
+#Additional{
+    position: absolute;
+    top: 400px;
+    right: 20px;
+    width: 90%;
+    height: 200px;
+    max-width: 90%;
+    max-height: 200px;
+    overflow: auto;
+    /* border-radius: 50px; */
+
+}
+
+#submit{
+    position: absolute;
+    background-color: hsl(252, 100%, 67%) ;
+    /* background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%)); */
+    width: 90%;
+    height: 50px;
+    border-radius: 50px;
+    bottom: 30px;
+    right: 25px;
+}
+/* #reset{
+    position: absolute;
+    background-color: red;
+    border-radius: 50px;
+    width: 100px;
+    height: 60px;
+    left: 20px;
+    bottom: 230px;
+} */
+
+.content{
+    /* background-color: black; */
+    /* display: flex; */
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+    /* justify-content: center; */
+    /* align-items: center;
+    flex-direction: row; */
+    /* position: relative; */
+    /* left: 200px; */
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    height: auto;
+    position: absolute;
+    top: 100px;
+}
+
+.paragraph{
+    /* background-color: black; */
+    color: aliceblue ;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+}
+
+.paragraph1{
+    /* background-color: black; */
+    color: aliceblue;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+}
+
+.go{
+    position: absolute;
+    background-color: transparent;
+    /* background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%)); */
+    /* width: 10px; */
+    /* height: 10px; */
+    border: none;
+    top: 50px;
+    left: 300px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+
+    /* background-color: red ; */
+}
+
+.paragraph2{
+    /* background-color: black; */
+    color: aliceblue;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 450px;
+}
+
+.go2{
+    color: aliceblue;
+    position: absolute;
+    background-color: transparent;
+    /* background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%)); */
+    border: none;
+    /* width: 50px; */
+    /* height: 50px; */
+    top: 40px;
+    left: 340px;
+}
+
+.paragraph3{
+    /* background-color: black; */
+    color: aliceblue;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 600px;
+}
+
+.go3{
+    position: absolute;
+    background-color: transparent;
+    /* background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%)); */
+    border: none;
+    top: 40px;
+    left: 340px;
+}
+
+.Icon2{
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 35px;
+    left: 42px;
+}
+.go4{
+    background-color: transparent;
+    border: none;
+}
+
+#submit:hover{
+    box-shadow: 10px 10px 10px;
+
+}
+
+#Email:hover{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+    /* background-color: red; */
+}
+
+#Email:focus{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+    /* background-color: red; */
+}
+input {
+    
+}
+/* 
+#Email:active{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+    /* background-color: red; */
+
+#Message:hover{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+}
+
+#Additional:hover{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+}
+
+#Message:focus{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+    /* background-color: red; */
+}
+
+#Additional:focus{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+    /* background-color: red; */
+}
+
+.Name:hover{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+    /* background-color: red; */
+}
+
+.Name:focus{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+    /* background-color: red; */
+}
+
+.Name1:hover{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+    /* background-color: red; */
+}
+
+.Name1:focus{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 10px;
+    /* background-color: red; */
+}
+
+.go:hover{
+    box-shadow: 10px 10px 10px;
+    border-radius: 50px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.go2:hover{
+    box-shadow: 10px 10px 10px black;
+    border-radius: 50px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.go3:hover{
+    box-shadow: 10px 10px 10px;
+    border-radius: 50px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.error-message{
+    color: red;
+    text-decoration: underline;
+}
+
+/* mobile s */
+@media (max-width: 321px){
+    body{
+        max-height: none;
+        height: 900px;
+        max-width: 32px;
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 350px;
+    }
+    .content{
+        position: static;
+        transform: translate(-30px,100px);
+        /* margin-bottom: 100px; */
+    }
+    .FormC{
+        position: static;
+        width: 500px;
+        transform: translate(50px, 50px);
+        /* background-color: black; */
+    }
+    .hidden{
+        display: block;
+        height: 100px;
+    }
+    .label2{
+        position: absolute;
+        top: 25px ;
+        right: 60px;
+    }
+    .Name{
+        /* display: flex; */
+        width: 39%;
+        height: 50px;
+        /* justify-content: flex-start; */
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        border-radius: 50px;
+    
+    }
+    .Name1{
+        /* display: flex; */
+        width: 39%;
+        height: 50px;
+        /* justify-content: flex-end; */
+        position: absolute;
+        right: 20px;
+        top: 50px;
+        border-radius: 50px;
+    }
+    h1{
+        width: 250px;
+    }
+    p{
+        width: 300px;
+    }
+    .Email{
+        position: absolute;
+        top: 125px ;
+        left: 15px;
+    }
+    
+    .Message{
+        position: absolute;
+        top: 220px ;
+        left: 15px;
+    }
+    
+    .Add{
+        position: absolute;
+        top: 375px ;
+        left: 15px;
+    }
+    #name-error{
+        font-size: 11px;
+        left: 20px;
+    }
+    #lastname-error{
+        font-size: 11px;
+        right: 15px;
+    }
+    #email-error{
+        font-size: 13px;
+        top: 207px;
+        left: 20px;
+    }
+    #subject-error{
+        font-size: 14px;
+        left: 20px;
+    }
+    #message-error{
+        font-size: 13px;
+        left: 20px;
+    }
+    .error-message{
+        text-decoration: none;
+    }
+}
+
+/* mobile M */
+@media (min-width: 321px) and (max-width: 376px) {
+    body{
+        max-height: none;
+        height: 900px;
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 350px;
+    }
+    .content{
+        position: static;
+        transform: translate(-30px,100px);
+        /* margin-bottom: 100px; */
+    }
+    .FormC{
+        position: static;
+        width: 500px;
+        transform: translate(50px, 50px);
+        /* background-color: black; */
+    }
+    .hidden{
+        display: block;
+        height: 100px;
+    }
+    .label2{
+        position: absolute;
+        top: 25px ;
+        right: 60px;
+    }
+    .Name{
+        /* display: flex; */
+        width: 39%;
+        height: 50px;
+        /* justify-content: flex-start; */
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        border-radius: 50px;
+    
+    }
+    .Name1{
+        /* display: flex; */
+        width: 39%;
+        height: 50px;
+        /* justify-content: flex-end; */
+        position: absolute;
+        right: 20px;
+        top: 50px;
+        border-radius: 50px;
+    }
+    h1{
+        width: 250px;
+    }
+    p{
+        width: 300px;
+    }
+    .Email{
+        position: absolute;
+        top: 125px ;
+        left: 15px;
+    }
+    
+    .Message{
+        position: absolute;
+        top: 220px ;
+        left: 15px;
+    }
+    
+    .Add{
+        position: absolute;
+        top: 375px ;
+        left: 15px;
+    }
+    #name-error{
+        font-size: 11px;
+        left: 20px;
+    }
+    #lastname-error{
+        font-size: 11px;
+        right: 15px;
+    }
+    #email-error{
+        font-size: 13px;
+        top: 207px;
+        left: 20px;
+    }
+    #subject-error{
+        font-size: 14px;
+        left: 20px;
+    }
+    #message-error{
+        font-size: 13px;
+        left: 20px;
+    }
+    .error-message{
+        text-decoration: none;
+    }
+}
+
+/* mobile L */
+
+@media (min-width: 376px) and (max-width: 426px) {
+    body{
+        max-height: none;
+        height: 900px;
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 350px;
+    }
+    .content{
+        position: static;
+        transform: translate(-30px,100px);
+        /* margin-bottom: 100px; */
+    }
+    .FormC{
+        position: static;
+        width: 500px;
+        transform: translate(50px, 50px);
+        /* background-color: black; */
+    }
+    .hidden{
+        display: block;
+        height: 100px;
+    }
+    .label2{
+        position: absolute;
+        top: 25px ;
+        right: 60px;
+    }
+    .Name{
+        /* display: flex; */
+        width: 41%;
+        height: 50px;
+        /* justify-content: flex-start; */
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        border-radius: 50px;
+    
+    }
+    .Name1{
+        /* display: flex; */
+        width: 41%;
+        height: 50px;
+        /* justify-content: flex-end; */
+        position: absolute;
+        right: 20px;
+        top: 50px;
+        border-radius: 50px;
+    }
+    h1{
+        width: 250px;
+    }
+    p{
+        width: 300px;
+    }
+    .Email{
+        position: absolute;
+        top: 125px ;
+        left: 15px;
+    }
+    
+    .Message{
+        position: absolute;
+        top: 220px ;
+        left: 15px;
+    }
+    
+    .Add{
+        position: absolute;
+        top: 375px ;
+        left: 15px;
+    }
+    #name-error{
+        font-size: 11px;
+        left: 20px;
+    }
+    #lastname-error{
+        font-size: 11px;
+        right: 15px;
+    }
+    #email-error{
+        font-size: 13px;
+        top: 207px;
+        left: 20px;
+    }
+    #subject-error{
+        font-size: 14px;
+        left: 20px;
+    }
+    #message-error{
+        font-size: 13px;
+        left: 20px;
+    }
+    .error-message{
+        text-decoration: none;
+    }
+}
+/* tablet */
+
+@media (min-width: 426px) and (max-width: 769px){
+    body{
+        max-height: none;
+        height: 900px;
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+    }
+    .content{
+        position: static;
+        transform: translate(-30px,100px);
+        /* margin-bottom: 100px; */
+    }
+    .FormC{
+        position: static;
+        width: 500px;
+        transform: translate(40px, 50px);
+        /* background-color: black; */
+    }
+    .hidden{
+        display: block;
+        height: 100px;
+    }
+    .label2{
+        position: absolute;
+        top: 25px ;
+        right: 150px;
+    }
+    .Name{
+        /* display: flex; */
+        width: 43%;
+        height: 50px;
+        /* justify-content: flex-start; */
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        border-radius: 50px;
+    
+    }
+    .Name1{
+        /* display: flex; */
+        width: 43%;
+        height: 50px;
+        /* justify-content: flex-end; */
+        position: absolute;
+        right: 20px;
+        top: 50px;
+        border-radius: 50px;
+    }
+    h1{
+        width: 250px;
+    }
+    p{
+        width: 300px;
+    }
+
+    #name-error{
+        left: 35px;
+        font-size: 13px;
+    }
+    #lastname-error{
+        font-size: 13px;
+    }
+}
+
+/* Labtop */
+
+@media (min-width: 769px) and (max-width: 1025px) {
+    body{
+        max-height: none;
+        height: 900px;
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 350px;
+    }
+    .content{
+        position: static;
+        transform: translate(450px,-750px);
+        /* margin-bottom: 100px; */
+    }
+    .FormC{
+        position: static;
+        width: 700px;
+        transform: translate(75px, 50px);
+        /* background-color: black; */
+    }
+    .hidden{
+        display: block;
+        height: 100px;
+    }
+    .label2{
+        position: absolute;
+        top: 25px ;
+        right: 120px;
+    }
+    .Name{
+        /* display: flex; */
+        width: 41%;
+        height: 50px;
+        /* justify-content: flex-start; */
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        border-radius: 50px;
+    
+    }
+    .Name1{
+        /* display: flex; */
+        width: 41%;
+        height: 50px;
+        /* justify-content: flex-end; */
+        position: absolute;
+        right: 20px;
+        top: 50px;
+        border-radius: 50px;
+    }
+    h1{
+        width: 250px;
+    }
+    p{
+        width: 300px;
+    }
+    .Email{
+        position: absolute;
+        top: 125px ;
+        left: 25px;
+    }
+    
+    .Message{
+        position: absolute;
+        top: 220px ;
+        left: 25px;
+    }
+    
+    .Add{
+        position: absolute;
+        top: 375px ;
+        left: 25px;
+    }
+    form{
+        width: 433px;
+        /* transform: translate(20px,0); */
+    }
+}
