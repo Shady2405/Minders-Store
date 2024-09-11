@@ -5,6 +5,11 @@ body{
     height: 900px;
     max-height: 1000px;
     background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin: -18px 0;
 }
 
 .container{
@@ -307,9 +312,6 @@ h1{
     box-shadow: 10px 10px 10px;
     /* background-color: red; */
 }
-input {
-    
-}
 /* 
 #Email:active{
     border-color: blueviolet;
@@ -491,6 +493,17 @@ input {
     .error-message{
         text-decoration: none;
     }
+    footer{
+        transform: translate(-8px, 900px);
+        width: 470px;
+    }
+    .dk{
+        transform: translate(-36px, 0px);
+    }
+    nav{
+        width: 388px;
+        transform: translate(18px, 0px);
+    }
 }
 
 /* mobile M */
@@ -592,6 +605,17 @@ input {
     }
     .error-message{
         text-decoration: none;
+    }
+    footer{
+        transform: translate(-8px, 900px);
+        width: 470px;
+    }
+    .dk{
+        transform: translate(-36px, 0px);
+    }
+    nav{
+        width: 388px;
+        transform: translate(18px, 0px);
     }
 }
 
@@ -696,13 +720,20 @@ input {
     .error-message{
         text-decoration: none;
     }
+    footer{
+        transform: translate(-8px, 900px);
+        width: 114%;
+    }
+    .dk{
+        transform: translate(-36px, 0px);
+    }
 }
 /* tablet */
 
 @media (min-width: 426px) and (max-width: 769px){
     body{
-        max-height: none;
-        height: 900px;
+        /* max-height: none; */
+        /* height: 900px; */
     }
     .container{
         flex-direction: row;
@@ -764,6 +795,18 @@ input {
     }
     #lastname-error{
         font-size: 13px;
+    }
+    /* .footerContainer{
+        transform: translate(0,800px);
+    }
+    .footerBottom{
+        transform: translate(0,900px);
+    } */
+    footer{
+        transform: translate(0,900px);
+    }
+    .dk{
+        transform: translate(-36px, 0px);
     }
 }
 
