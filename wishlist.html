@@ -115,6 +115,85 @@
             <p>Copyright &copy;2024; Designed by <span class="designer"><a href="#" target="_blank">Rahma</a></span></p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to render the wishlist table
+            function renderWishlistTable() {
+                // Retrieve wishlist data from localStorage
+                const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+        
+                // Select the table body element
+                const wishlistTableBody = document.querySelector('#wishlist-table tbody');
+        
+                // Clear any existing rows
+                wishlistTableBody.innerHTML = "";
+        
+                // Loop through the wishlist and generate table rows
+                wishlist.forEach((book, index) => {
+                    // Create a new table row
+                    const row = document.createElement('tr');
+        
+                    // Create table cells for each book detail
+                    const titleCell = document.createElement('td');
+                    titleCell.textContent = book.title;  // Book title
+        
+                    const priceCell = document.createElement('td');
+                    priceCell.textContent = `$${book.price.toFixed(2)}`;  // Book price
+        
+                    const imageCell = document.createElement('td');
+                    const imgElement = document.createElement('img');
+                    imgElement.src = book.image;  // Book image URL
+                    imgElement.alt = book.title;  // Alt text
+                    imgElement.style.width = '50px';  // Adjust width if needed
+                    imageCell.appendChild(imgElement);
+        
+                    // Create a remove button cell
+                    const removeCell = document.createElement('td');
+                    const removeButton = document.createElement('button');
+                    removeButton.textContent = 'Remove';
+                    removeButton.classList.add('remove-from-wishlist'); // Add a class for styling
+                    removeButton.addEventListener('click', function() {
+                        removeFromWishlist(index);  // Call remove function on click
+                    });
+                    removeCell.appendChild(removeButton);
+        
+                    // Append cells to the row
+                    row.appendChild(imageCell);
+                    row.appendChild(titleCell);
+                    row.appendChild(priceCell);
+                    row.appendChild(removeCell);
+        
+                    // Append the row to the table body
+                    wishlistTableBody.appendChild(row);
+                });
+            }
+        
+            // Function to remove an item from the wishlist
+            function removeFromWishlist(index) {
+                // Retrieve wishlist data from localStorage
+                let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+        
+                // Remove the item at the specified index
+                wishlist.splice(index, 1);
+        
+                // Save the updated wishlist back to localStorage
+                localStorage.setItem('wishlist', JSON.stringify(wishlist));
+        
+                // Re-render the table to reflect the changes
+                renderWishlistTable();
+        
+                // Update wishlist count
+                const wishlistCountElement = document.getElementById('wishlist-count');
+                if (wishlistCountElement) {
+                    wishlistCountElement.textContent = wishlist.length;
+                }
+            }
+        
+            // Initial render of the wishlist table
+            renderWishlistTable();
+        });
+        
+    </script>
     <script src="Book-Store/js/main.js"></script>
     <script src="Book-Store/js/wishlist.js"></script>
     <script src="Book-Store/js/nav.js"></script>
